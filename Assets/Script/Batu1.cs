@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Batu1 : MonoBehaviour
 {
     public GameObject nyuryoku;
+    public TextMeshProUGUI text1;
+    public TextMeshProUGUI text2;
+    public TextMeshProUGUI text3;
 
     // Start is called before the first frame update
     void Start()
@@ -15,5 +19,8 @@ public class Batu1 : MonoBehaviour
     void OnMouseDown() {
         this.gameObject.SetActive(false);
         nyuryoku.SetActive(false);
+        text1.gameObject.SetActive(false);
+        text2.gameObject.SetActive(false);
+        text3.gameObject.SetActive(false);
     }
 }
