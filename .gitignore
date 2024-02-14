@@ -73,3 +73,7 @@ crashlytics-build.properties
 
 # フォントのデータを無視する
 /[Aa]ssets/[Ff]onts/
+*.meta
+*.otf
+*.txt
+*.asset

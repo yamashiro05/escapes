@@ -9,6 +9,7 @@ public class Batu1 : MonoBehaviour
     public TextMeshProUGUI text1;
     public TextMeshProUGUI text2;
     public TextMeshProUGUI text3;
+    public TextMeshProUGUI text4;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,8 @@ public class Batu1 : MonoBehaviour
         text1.gameObject.SetActive(false);
         text2.gameObject.SetActive(false);
         text3.gameObject.SetActive(false);
+        if (text4 != null) {
+            text4.gameObject.SetActive(false);
+        }
     }
 }
