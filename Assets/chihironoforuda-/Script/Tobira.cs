@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript1 : MonoBehaviour
-{ public Sprite closedDoorSprite;
+public class Tobira : MonoBehaviour
+{
+    public Sprite closedDoorSprite;
     public Sprite openedDoorSprite;
 
     private bool isDoorOpen = false;
