@@ -11,5 +11,5 @@ public class Flag : MonoBehaviour
     public static bool kokku = false;
     public static bool hondana = false;
     public static bool houcho = false;
-    public static bool prefab = false;
+    public static bool kasanari = true;
 }

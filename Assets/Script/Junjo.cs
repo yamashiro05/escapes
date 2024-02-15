@@ -38,7 +38,7 @@ public class Junjo : MonoBehaviour
         spriteRenderer.color = modifiedColor;
 
         // 0.5秒後に透明度を元に戻す
-        Invoke("RestoreColor", 0.5f);
+        Invoke("RestoreColor", 0.2f);
 
         if (buttonIndex == sequence[currentIndex])
         {

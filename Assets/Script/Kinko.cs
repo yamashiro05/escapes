@@ -13,13 +13,16 @@ public class Kinko : MonoBehaviour
     public TextMeshProUGUI text4;
 
     void OnMouseDown() {
-        nyuryoku.SetActive(true);
-        batu.SetActive(true);
-        text1.gameObject.SetActive(true);
-        text2.gameObject.SetActive(true);
-        text3.gameObject.SetActive(true);
-        if (text4 != null) {
-            text4.gameObject.SetActive(true);
+        if (Flag.kasanari) {
+            nyuryoku.SetActive(true);
+            batu.SetActive(true);
+            text1.gameObject.SetActive(true);
+            text2.gameObject.SetActive(true);
+            text3.gameObject.SetActive(true);
+            if (text4 != null) {
+                text4.gameObject.SetActive(true);
+            }
         }
+        Flag.kasanari = false;
     }
 }

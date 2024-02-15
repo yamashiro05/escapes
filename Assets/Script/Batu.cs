@@ -16,6 +16,7 @@ public class Batu : MonoBehaviour
     }
 
     void OnMouseDown() {
+        Flag.kasanari = true;
         this.gameObject.SetActive(false);
         botan1.SetActive(false);
         botan2.SetActive(false);

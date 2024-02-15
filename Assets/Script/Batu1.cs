@@ -18,6 +18,7 @@ public class Batu1 : MonoBehaviour
     }
 
     void OnMouseDown() {
+        Flag.kasanari = true;
         this.gameObject.SetActive(false);
         nyuryoku.SetActive(false);
         text1.gameObject.SetActive(false);
