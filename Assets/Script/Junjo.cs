@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Junjo : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Junjo : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+    public TextMeshProUGUI text;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,7 @@ public class Junjo : MonoBehaviour
             if (currentIndex == sequence.Length)
             {
                 Debug.Log("正解");
+                text.text = "包丁をゲットした";
                 currentIndex = 0; // シーケンスのリセット
             }
         }

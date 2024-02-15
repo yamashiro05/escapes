@@ -69,7 +69,7 @@ public class Moji : MonoBehaviour
         }
 
     　　//正解
-        if(moji1 == 'シ' && moji2 == 'ャ' && moji3 == 'オ' && moji4 == 'ズ')
+        if(moji1 == 'ジ' && moji2 == 'ャ' && moji3 == 'オ' && moji4 == 'ズ')
         {
             text.text = "餃子の皮をゲットした";
         }

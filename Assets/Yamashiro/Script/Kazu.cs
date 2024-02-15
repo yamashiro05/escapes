@@ -57,9 +57,9 @@ public class Kazu : MonoBehaviour
         }
 
     　　//正解
-        if(hako_l == 1 && hako_m == 2 && hako_r == 3)
+        if(hako_l == 3 && hako_m == 3 && hako_r == 4)
         {
-            //text.text = "箱の中には……";
+            text.text = "野菜を手に入れた";
         }
 
     }
