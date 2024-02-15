@@ -7,12 +7,16 @@ public class Desk : MonoBehaviour
     public GameObject botan1;
     public GameObject botan2;
     public GameObject botan3;
+    public GameObject botan4;
     public GameObject batu;
 
     void OnMouseDown() {
         botan1.SetActive(true);
         botan2.SetActive(true);
         botan3.SetActive(true);
+        if (botan4 != null) {
+            botan4.SetActive(true);
+        }
         batu.SetActive(true);
     }
 
