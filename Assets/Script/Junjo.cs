@@ -49,7 +49,10 @@ public class Junjo : MonoBehaviour
             {
                 Debug.Log("正解");
                 text.text = "包丁をゲットした";
+                Flag.houcho = true;
                 currentIndex = 0; // シーケンスのリセット
+                // 3秒後にテキストを消す
+                Invoke("ResetText", 3f);
             }
         }
         else
@@ -62,5 +65,10 @@ public class Junjo : MonoBehaviour
     private void RestoreColor()
     {
         spriteRenderer.color = originalColor;
+    }
+
+    private void ResetText()
+    {
+        text.text = "";
     }
 }

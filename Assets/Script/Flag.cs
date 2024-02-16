@@ -12,4 +12,7 @@ public class Flag : MonoBehaviour
     public static bool hondana = false;
     public static bool houcho = false;
     public static bool kasanari = true;
+    public static bool tane = false;
+    public static bool nama = false;
+    public static bool kagi = false;
 }

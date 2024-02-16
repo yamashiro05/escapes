@@ -17,9 +17,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Kunter.unity
+    guid: 6973ce6da2dcac8469aded62023f6ef7
+  - enabled: 1
+    path: Assets/Scenes/Iriguti.unity
+    guid: cdf926904c8b53b4d89779379ede5dc5
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Kittin.unity
+    guid: 7dfa595bce80f8f428f8a4ece76c1a62
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

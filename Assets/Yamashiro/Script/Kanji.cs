@@ -72,7 +72,15 @@ public class Kanji : MonoBehaviour
         if(moji1 == '焼' && moji2 == '水' && moji3 == '揚' && moji4 == '棒')
         {
             text.text = "コック栓をゲットした";
+            Flag.kokku = true;
+            // 3秒後にテキストを消す
+            Invoke("ResetText", 3f);
         }
 
+    }
+
+    private void ResetText()
+    {
+        text.text = "";
     }
 }

@@ -60,7 +60,15 @@ public class Kazu : MonoBehaviour
         if(hako_l == 3 && hako_m == 3 && hako_r == 4)
         {
             text.text = "野菜を手に入れた";
+            Flag.vegeta = true;
+            // 3秒後にテキストを消す
+            Invoke("ResetText", 3f);
         }
 
+    }
+
+    private void ResetText()
+    {
+        text.text = "";
     }
 }

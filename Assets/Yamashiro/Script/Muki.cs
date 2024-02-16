@@ -66,11 +66,18 @@ public class Muki : MonoBehaviour
         }
 
     　　//正解
-        if(kakudo1 == -270 && kakudo2 == 0 && kakudo3 == -90 && kakudo4 == -180)
+        if(kakudo1 == -270 && kakudo2 == 0 && kakudo3 == -180 && kakudo4 == -90)
         {
             text.text = "フライパンをゲットした";
+            Flag.huraipan = true;
+            // 3秒後にテキストを消す
+            Invoke("ResetText", 3f);
         }
 
     }
 
+    private void ResetText()
+    {
+        text.text = "";
+    }
 }

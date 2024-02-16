@@ -72,7 +72,15 @@ public class Moji : MonoBehaviour
         if(moji1 == 'ジ' && moji2 == 'ャ' && moji3 == 'オ' && moji4 == 'ズ')
         {
             text.text = "餃子の皮をゲットした";
+            Flag.kawa = true;
+            // 3秒後にテキストを消す
+            Invoke("ResetText", 3f);
         }
 
+    }
+
+    private void ResetText()
+    {
+        text.text = "";
     }
 }

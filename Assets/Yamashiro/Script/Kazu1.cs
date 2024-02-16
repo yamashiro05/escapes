@@ -64,10 +64,18 @@ public class Kazu1 : MonoBehaviour
         }
 
     　　//正解
-        if(hako_l == 1 && hako_m == 2 && hako_r == 3 && hako_s == 3)
+        if(hako_l == 1 && hako_m == 1 && hako_r == 2 && hako_s == 9)
         {
             text.text = "肉をゲットした";
+            Flag.beef = true;
+            // 3秒後にテキストを消す
+            Invoke("ResetText", 3f);
         }
 
+    }
+
+    private void ResetText()
+    {
+        text.text = "";
     }
 }
