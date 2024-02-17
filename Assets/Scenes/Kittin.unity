@@ -603,7 +603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52609698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.38, y: -5.3, z: 1.079552}
+  m_LocalPosition: {x: 3.38, y: -2.79, z: 1.079552}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1443,6 +1443,7 @@ MonoBehaviour:
   text2: {fileID: 16962080}
   text3: {fileID: 217359187}
   text4: {fileID: 0}
+  aitem: {fileID: 465791663}
 --- !u!1 &217359182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,6 +1963,7 @@ MonoBehaviour:
   botan3: {fileID: 1997702664}
   botan4: {fileID: 0}
   batu: {fileID: 897206155}
+  aitem: {fileID: 2134236634}
 --- !u!1 &359830600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,7 +2439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467027594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.84, y: -3.22, z: 1.0743327}
+  m_LocalPosition: {x: -4.16, y: -3.02, z: 1.0743327}
   m_LocalScale: {x: 0.21609934, y: 0.2052203, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2775,7 +2777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576356205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.46, y: -5.3, z: 1.079552}
+  m_LocalPosition: {x: 1.46, y: -2.79, z: 1.079552}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2972,7 +2974,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3567,6 +3569,7 @@ MonoBehaviour:
   text2: {fileID: 1748345344}
   text3: {fileID: 787327043}
   text4: {fileID: 1691663122}
+  aitem: {fileID: 864313671}
 --- !u!1 &719553781
 GameObject:
   m_ObjectHideFlags: 0
@@ -4555,7 +4558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941172944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.40999997, y: -5.2599998, z: 1.079552}
+  m_LocalPosition: {x: -0.40999997, y: -2.7499995, z: 1.079552}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4814,6 +4817,7 @@ MonoBehaviour:
   text2: {fileID: 386463566}
   text3: {fileID: 2128864457}
   text4: {fileID: 982974145}
+  aitem: {fileID: 848273990}
 --- !u!1 &972173394
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,7 +6157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260254883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1799998, y: -5.2599998, z: 1.079552}
+  m_LocalPosition: {x: -2.1799998, y: -2.7499995, z: 1.079552}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7002,7 +7006,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1595763890
 RectTransform:
@@ -7984,6 +7988,7 @@ MonoBehaviour:
   botan3: {fileID: 576356205}
   botan4: {fileID: 52609698}
   batu: {fileID: 2038521566}
+  aitem: {fileID: 1189082770}
 --- !u!1 &1997702664
 GameObject:
   m_ObjectHideFlags: 0
@@ -8171,7 +8176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038521566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.23, y: -4.0599995, z: 1.079552}
+  m_LocalPosition: {x: 4.23, y: -1.5499992, z: 1.079552}
   m_LocalScale: {x: 0.2509, y: 0.321, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8402,6 +8407,7 @@ MonoBehaviour:
   text2: {fileID: 837648203}
   text3: {fileID: 86055765}
   text4: {fileID: 560799710}
+  aitem: {fileID: 579957513}
 --- !u!1 &2128864452
 GameObject:
   m_ObjectHideFlags: 0
