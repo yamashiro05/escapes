@@ -13,7 +13,7 @@ public class Kagi : MonoBehaviour
         Flag.kagi = true;
         text.text = "鍵をゲットした！！";
         // 3秒後にテキストを消す
-        Invoke("ResetText", 3f);
+        Invoke("ResetText", 2f);
     }
 
     private void ResetText()

@@ -15,4 +15,21 @@ public class Flag : MonoBehaviour
     public static bool tane = false;
     public static bool nama = false;
     public static bool kagi = false;
+
+    private void Start()
+    {
+        // 各変数の値をログに表示
+        Debug.Log("kawa: " + kawa);
+        Debug.Log("beef: " + beef);
+        Debug.Log("vegeta: " + vegeta);
+        Debug.Log("huraipan: " + huraipan);
+        Debug.Log("kokku: " + kokku);
+        Debug.Log("hondana: " + hondana);
+        Debug.Log("houcho: " + houcho);
+        Debug.Log("kasanari: " + kasanari);
+        Debug.Log("tane: " + tane);
+        Debug.Log("nama: " + nama);
+        Debug.Log("kagi: " + kagi);
+    }
+    
 }

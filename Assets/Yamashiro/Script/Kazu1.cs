@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Kazu1 : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Kazu1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SceneManager.sceneUnloaded += ResetStaticVariables;
+
     　　//Staticの値をTextに代入
         switch (me)
         {
@@ -35,6 +38,11 @@ public class Kazu1 : MonoBehaviour
         }
         this.gameObject.SetActive(false);
     }
+
+    /*private void OnDestroy()
+    {
+        SceneManager.sceneUnloaded -= ResetStaticVariables;
+    }*/
 
     public void clk()
     {
@@ -77,5 +85,14 @@ public class Kazu1 : MonoBehaviour
     private void ResetText()
     {
         text.text = "";
+    }
+
+    private void ResetStaticVariables(Scene scene)
+    {
+        // シーンがアンロードされたときに静的な変数をリセットする
+        hako_l = 0;
+        hako_m = 0;
+        hako_r = 0;
+        hako_s = 0;
     }
 }

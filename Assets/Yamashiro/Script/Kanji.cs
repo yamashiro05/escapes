@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Kanji : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Kanji : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SceneManager.sceneUnloaded += ResetStaticVariables;
+
         //Staticの値をTextに代入
         switch (me)
         {
@@ -82,5 +85,14 @@ public class Kanji : MonoBehaviour
     private void ResetText()
     {
         text.text = "";
+    }
+
+    private void ResetStaticVariables(Scene scene)
+    {
+        // シーンがアンロードされたときに静的な変数をリセットする
+        moji1 = '\0';
+        moji2 = '\0';
+        moji3 = '\0';
+        moji4 = '\0';
     }
 }

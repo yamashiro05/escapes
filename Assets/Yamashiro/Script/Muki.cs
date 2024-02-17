@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Muki : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Muki : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SceneManager.sceneUnloaded += ResetStaticVariables;
+
         //Staticの値をTextに代入
         switch (me)
         {
@@ -79,5 +82,14 @@ public class Muki : MonoBehaviour
     private void ResetText()
     {
         text.text = "";
+    }
+
+    private void ResetStaticVariables(Scene scene)
+    {
+        // シーンがアンロードされたときに静的な変数をリセットする
+        kakudo1 = 0;
+        kakudo2 = 0;
+        kakudo3 = 0;
+        kakudo4 = 0;
     }
 }
