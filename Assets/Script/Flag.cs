@@ -15,6 +15,7 @@ public class Flag : MonoBehaviour
     public static bool tane = false;
     public static bool nama = false;
     public static bool kagi = false;
+    public static bool kokku2 = false;
 
     private void Start()
     {

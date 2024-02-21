@@ -3,33 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Chouri : MonoBehaviour
+public class Manaita : MonoBehaviour
 {
     public GameObject aitem1;
     public GameObject aitem2;
-    public GameObject aitem3;
+    public static int count = 0;
     public TextMeshProUGUI text;
-    int count = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         aitem1.gameObject.SetActive(false);
         aitem2.gameObject.SetActive(false);
-        aitem3.gameObject.SetActive(false);
     }
 
     void OnMouseDown() {
         if (Flag.kasanari) {
-            if (count == 2 && Flag.nama && Flag.huraipan && Flag.kokku) {
-                aitem2.gameObject.SetActive(false);
-                Flag.huraipan = false;
-                Flag.kokku = false;
-                aitem3.gameObject.SetActive(true);
-                text.text = "餃子を作った！！";
-                // 3秒後にテキストを消す
-                Invoke("ResetText", 3f);
-            }
 
             if (count == 1 && Flag.tane && Flag.kawa) {
                 count++;
@@ -41,6 +30,7 @@ public class Chouri : MonoBehaviour
                 // 3秒後にテキストを消す
                 Invoke("ResetText", 3f);
             }
+
             if (count == 0 && Flag.beef && Flag.vegeta && Flag.houcho) {
                 count++;
                 Flag.tane = true;
@@ -53,10 +43,5 @@ public class Chouri : MonoBehaviour
                 Invoke("ResetText", 3f);
             }
         }
-    }
-
-    private void ResetText()
-    {
-        text.text = "";
     }
 }

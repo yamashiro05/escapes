@@ -10,6 +10,11 @@ public class Desk : MonoBehaviour
     public GameObject botan4;
     public GameObject batu;
     public GameObject aitem;
+    public GameObject tobira;
+
+    void Start() {
+        //tobira.gameObject.SetActive(false);
+    }
 
     void OnMouseDown() {
         if (aitem != null && !aitem.gameObject.activeSelf) {
@@ -24,7 +29,15 @@ public class Desk : MonoBehaviour
             }
             Flag.kasanari = false;
         } else {
-
+            if (Flag.kasanari) {
+                if (!tobira.gameObject.activeSelf) {
+                    tobira.gameObject.SetActive(true);
+                    Debug.Log("開く");
+                } else {
+                    tobira.gameObject.SetActive(false);
+                    Debug.Log("閉める");
+                }
+            }
         }
     }
 

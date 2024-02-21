@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Kinko : MonoBehaviour
+public class Kinko1 : MonoBehaviour
 {
     public GameObject nyuryoku;
     public GameObject batu;
@@ -12,10 +12,11 @@ public class Kinko : MonoBehaviour
     public TextMeshProUGUI text3;
     public TextMeshProUGUI text4;
     public GameObject aitem;
+    public GameObject aitem2;
     public GameObject tobira;
 
     void OnMouseDown() {
-        if (aitem != null && !aitem.gameObject.activeSelf) {
+        if (aitem != null && (!aitem.gameObject.activeSelf && !aitem2.gameObject.activeSelf)) {
             if (Flag.kasanari) {
                 nyuryoku.SetActive(true);
                 batu.SetActive(true);
