@@ -3109,8 +3109,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u91CE\u83DC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d79149b9c956d74193242e1c38d8528, type: 2}
-  m_sharedMaterial: {fileID: -2370787643256882115, guid: 6d79149b9c956d74193242e1c38d8528, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ee5cf29e808bf5547b71f15012996456, type: 2}
+  m_sharedMaterial: {fileID: 7095881541965262507, guid: ee5cf29e808bf5547b71f15012996456, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3134,8 +3134,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3185,7 +3185,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002302919}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &1056065495
 GameObject:
   m_ObjectHideFlags: 0
